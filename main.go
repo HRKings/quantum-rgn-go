@@ -26,7 +26,7 @@ type AnuResponse struct {
 }
 
 func FetchQuantumRandomHex(quantity int) ([]string, error) {
-	URL := fmt.Sprintf("%s%d%s", "https://qrng.anu.edu.au/API/jsonI.php?length=", quantity, "&type=hex16&size=1024")
+	URL := fmt.Sprintf("https://qrng.anu.edu.au/API/jsonI.php?length=%d&type=hex16&size=1024", quantity)
 
 	resp, err := http.Get(URL)
 	if err != nil {
