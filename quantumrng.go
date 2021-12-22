@@ -1,4 +1,4 @@
-package main
+package quantumrng
 
 import (
 	"encoding/binary"
