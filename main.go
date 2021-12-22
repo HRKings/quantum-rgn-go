@@ -5,7 +5,6 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"fmt"
-	"log"
 	"math"
 	"net/http"
 )
@@ -109,14 +108,14 @@ func GetRandomInt(min int, max int) (int, error) {
 	return (int(numberForm) % (max - min + 1)) + min, nil
 }
 
-func main() {
-
-	for i := 0; i < 30; i++ {
-		number, err := GetRandomInt(1, 20)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		fmt.Printf("%d\n", number)
-	}
-}
+//func main() {
+//
+//	for i := 0; i < 30; i++ {
+//		number, err := GetRandomInt(1, 20)
+//		if err != nil {
+//			log.Fatal(err)
+//		}
+//
+//		fmt.Printf("%d\n", number)
+//	}
+//}
